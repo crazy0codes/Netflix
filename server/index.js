@@ -1,7 +1,10 @@
+const dbConnection = require('./src/db/dbconnection');
+const loginRoute = require('./src/login');
 const express = require('express');
 const app = express();
+const port = 4000;
 
-app.get('/', (req, res) => {
-    res.send('Hello World');});
+app.use('/login',loginRoute)
 
-app.listen(3000, () => {console.log('Server is running on port 3000');});
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));

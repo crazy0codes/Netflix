@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link type="text/css" rel="stylesheet" href="./App.css"> -->
+</head>
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        main {
+            background-image: url('https://occ-0-6127-2186.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABdYkHwZZYZ4cYPZ20OWPg4dml1YWoI5TnX0ALc_4rHEkyvokTlifJKLD2U_ypf2wNi9Jc6Jigr53o-0syqQFrB0TLUIk1A-k1U3z.jpg?r=720&quot');
+            color: #fff;
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+        #movie-title {
+            width: 450px;
+            height: 101.4px;
+            padding-bottom: 60px;
+        }
+        .details-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: left;
+            height: 100vh;
+            padding-left: 70px;
+            backdrop-filter: saturate(130%);
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgb(22, 22, 23,1) 16%, rgba(22, 22, 23,1) 25%, rgba(22, 22, 23, 0) 75%);
+        }
+        .movieName {
+            font-size:  27px;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+
+        button {
+            width: 80px;
+            height: 40px;
+            font-weight: 500;
+            font-size: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+    <main>
+        <div class="details-container">
+            <img src="https://occ-0-6127-2186.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABeNw7JVmc_we3KqCvaQVHyp8cu3gu5iHLjHzjZpG5CnQOdumax5NpXqet7ik8EWaWHPH_tOB3bx8l57nVsVuOwxMRQoP1hJ6NRWZmNekUFfNO2m3Ku8Al4epm8E6lBwBow4TzNR35dnR1mMRwvz3wqunh5IjS1rjucR5PBjIDFU01CLJ6h5dKg.png?r=024" alt="" id="movie-title"/>
+            <p class="movieName">Extraction 2</p>
+            <p style="width: 400px; font-weight: 500; margin-bottom: 30px;">Back from the brink of death, highly skilled commando Tyler Rake takes on another dangerous mission: saving the imprisoned family of a ruthless gangster.</p>
+            <div>
+                <button>Play</button>
+                <button>info</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
