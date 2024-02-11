@@ -21,7 +21,7 @@ async function dbConnection() {
 }
 
 async function olderUser() {
-    const uri = 'mongodb+srv://users:cBjjKFAATXdjMuVP@cluster0.pdeg90c.mongodb.net/?retryWrites=true&w=majority';
+    const uri = process.env.MONGO_URI;
     const client = new MongoClient(uri)
     try {
         await client.connect()
